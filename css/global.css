@@ -43,7 +43,7 @@ z-index: 999999;
 width: 100%;
 background: #EE0000;
 }
-#emergency p,#announcement p {
+#emergency p,#banner_spacer p,#announcement p {
 padding: 1em 0 1em 220px;
 margin: 0 auto;
 width: 740px;
@@ -52,23 +52,19 @@ text-shadow: #000 0 1px 0;
 -webkit-text-shadow: #000 0 1px 0;
 -moz-text-shadow: #000 0 1px 0;
 }
+#banner_spacer p {
+margin-bottom: 34px;
+}
 #emergency p {
 background: url(../images/alerts/warning.png) no-repeat 170px center;
 }
 #announcement {
 width: 100%;
 color: #FFF;
-background-color: #70b1e4;
 background-color: #1799fe;
-background-color: rgba(23,153,254,1);
-behavior: url(PIE.htc);
 }
 #announcement p {
 background: url(../images/alerts/info.png) no-repeat 170px center;
-}
-#banner_spacer p {
-padding: 1.25em 0 1.25em 0;
-margin: 0;
 }
 #siteheader {
 width: 100%;
@@ -325,20 +321,6 @@ margin-right: 20px;
 #footer .col3 ul,footer .col3 ul {
 border-left: 1px solid #666;
 }
-/* INDEX.ASPX has body#index = VANILLA LOOK AND FEEL
-it needs top padding to push everything down below the logo badge
-because it doesn't have a globalnav to push things down */
-#index {
-padding-top: 140px;
-}
-#index #menutitle {
-margin-left: 5px;
-color: #70b1e4;
-letter-spacing: -1px;
-margin: 0 0 25px 5px;
-font-size: 3em;
-text-shadow: none;
-}
 /*HACKS*/
 .ie #logo {
 border: 1px solid #666;
@@ -363,11 +345,12 @@ width: 45px;
 .ie #siteheader form {
 margin-bottom: 5px;
 }
-/* IE7 doesn't understand display:inline-block */      
+/* IE7 doesn't understand display:inline-block */ 
 .ie7 #footer li {
 display: block;
 float: left;
 }
-.ie7 #footer {
-font-size: .8em;
+.ie7 #footer,.ie8 #footer {
+font-size: .7em;
+line-height: 1.2em;
 }
