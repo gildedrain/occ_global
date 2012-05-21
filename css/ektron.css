@@ -17,9 +17,9 @@ display: none;
 }
 /* hide tiers that aren't opened yet */
 /* tier 1 */
-.menu .ekflexmenu_submenu_btnlink:hover, 
+.menu .ekflexmenu_submenu_btnlink:hover,
 .menu .ekflexmenu_link:hover,
-.menu .ekflexmenu_link_selected, 
+.menu .ekflexmenu_link_selected,
 .menu .ekflexmenu_link_selected:hover,
 .menu .ekflexmenu_button_selected {
 color: #FFF !important;
