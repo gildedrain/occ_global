@@ -5,12 +5,14 @@
 #logo:hover{background:#005372;}
 /* FIXED POSITION HEADER AREA (old)*/
 #banner_container{position:fixed;top:0;left:0;width:100%;z-index:999999;}
-#emergency{width:100%;background:#EE0000;}
+#emergency{width:100%;color:#fff;background-color:#EE0000;}
 #emergency p,#banner_spacer p,#announcement p{padding:1em 0 1em 220px;margin:0 auto;width:740px;color:#fff;text-shadow:#000 0 1px 0;-webkit-text-shadow:#000 0 1px 0;-moz-text-shadow:#000 0 1px 0;}
 #banner_spacer p{margin-bottom:34px;}
 #emergency p{background:url(../images/alerts/warning.png) no-repeat 170px center;}
 #announcement{width:100%;color:#FFF;background-color:#1799fe;}
 #announcement p{background:url(../images/alerts/info.png) no-repeat 170px center;}
+.ie7 #home_top #emergency {width:auto;}
+.ie7 #home_top #announcement {width:auto;}
 /* NEW EMERGENCY HEADER,only on homepage,will add to sub-templates later,just need to remove #home_top and setup new includes */
 #home_top #emergency p,#home_top #announcement p{padding:1em 0 1em 45px;margin:0 auto;width:895px;color:#fff;text-shadow:#000 0 1px 0;-webkit-text-shadow:#000 0 1px 0;-moz-text-shadow:#000 0 1px 0;}
 #home_top #emergency p{background:url(../images/alerts/warning.png) no-repeat 0px center;}
@@ -114,30 +116,39 @@ embed,object{z-index:0 !important}
 .ie .menu ul ul .ekflexmenu_link_selected,.ie .menu ul ul .ekflexmenu_link:hover,.ie .menu ul ul .ekflexmenu_link_selected:hover{background-color:#888 !important;color:#FFF;}
 /* OCC LOGO BADGE (new) */
 #occlogo{display:block;width:404px;height:100px;position:relative;z-index:1003;left:-100px;top:0;text-indent:100%;margin:0 0 -100px 0;white-space:nowrap;overflow:hidden;background:transparent url(../images/logo.png) no-repeat top left;}
+/* OCC HEADER DRAWER (new)*/
+#occheaderbg{height:48px;width:100%;position:relative;z-index:1002;margin:0 auto;background:#000;}
+.headernav{position:absolute;top:0;overflow:hidden;z-index:1004;padding-left:220px;height:48px;}
+.headernav div{display:inline-block;vertical-align:top;width:174px;border-right:1px solid #888;padding:15px 0 0 5px;}
+.ie7 .headernav div {display:block; float:left;}
+.headernav .formbox{border:none;}
+.headernav h3{text-transform:uppercase;color:#1799fe;font-size:16px;}
+.headernav ul{padding:0;height:230px;}
+.headernav li{list-style:none;line-height:1.2;font-size:13px;margin-bottom:.8em;}
+.headernav a.accent1{color:#FFF;}
+.headernav a.accent2{color:#70B1E4;}
+.headernav form{margin-top:-10px;}
+.ie7 .headernav form {margin-top:-3px;}
+.headernav label{display:none;}
+.headernav .searchbox{height:19px;padding:5px;background:#062640;border:1px solid #555;color:#fff;position:relative;top:-5px;width:130px;}
+.headernav .submitbutton{text-indent:1000%;white-space:nowrap;overflow:hidden;width:30px;height:31px;background:url(../images/siteheader_sprites.png) no-repeat 0 -1px;border:0;position:relative;top:-6px;}
+.ie7 .headernav .submitbutton {top:-13px; background:#1799fe; color:#fff;}
+.ie8 .headernav .searchbox {top:-8px;}
+.ie8 .headernav .submitbutton {top:-5px;}
+.ie9 .headernav .searchbox {top:-8px}
+.ie9 .headernav .submitbutton {top:-8px;}
+.gecko .headernav .searchbox {top:-8px;}
+.gecko .headernav .submitbutton {top:-6px;}
+.headernav p{font-size:13px;margin:5px 0 .8em 0;}
+#occheader.basic{height:300px;}
+.headernav.basic{position:relative;height:auto;}
+.secure{padding-left:15px;background:url(../images/siteheader_sprites.png) no-repeat -4px -47px;}
 /* OCC FOOTER (new) */
 #occfooter{clear:both;background:#000;color:#aaa;font-size:.9em;display:block;padding:1em 0 4em 0;margin-top:4em;}
 #occfooter .logotext,.tagline{font-family:'minion pro','times new roman',serif;font-size:1.25em;text-transform:uppercase;color:#fff;margin-bottom:1em;font-weight:normal;}
 #occfooter .tagline{text-transform:none;}
 #occfooter a{color:#fff;}
-#occfooter .question{display:block;float:left;margin-right:45px;background:#003151 url(../images/siteheader_sprites.png) no-repeat 5px -70px;padding:10px 10px 10px 35px;font-size:1.2em;border:1px solid #3b5769;border-radius:2px;}
-#occfooter .footerlinks{width:500px;float:left;background:#222;outline:1px solid #333;padding:1em 0 1em 0;}
-#occfooter .footerlinks ul{list-style:none;padding:0;float:left;margin:0 1em 0 1em;}
+#occfooter .question{display:block;width:185px;margin:0 0 15px 0;background:#003151 url(../images/siteheader_sprites.png) no-repeat 5px -70px;padding:10px 10px 10px 35px;font-size:1em;border:1px solid #3b5769;border-radius:2px;}
+#occfooter .footerlinks{background:#222;outline:1px solid #333; margin-top:0px;}
+#occfooter .footerlinks ul{list-style:none;padding:0;float:left;margin:0 50px 0 0;}
 #occfooter .footerlinks li{line-height:1.75;}
-/* OCC HEADER DRAWER (new)*/
-#occheader{height:48px;width:100%;position:absolute;z-index:1002;margin:0 auto;background:#000;}
-.headernav{position:absolute;overflow:hidden;z-index:1004;padding-left:220px;height:48px;}
-.headernav div{display:inline-block;vertical-align:top;width:174px;border-right:1px solid rgba(255,255,255,.5);padding:15px 0 0 5px;}
-.headernav .formbox{border:none;}
-.headernav h3{text-transform:uppercase;color:#1799fe;font-size:16px;}
-.headernav ul{padding:0;height:230px;}
-.headernav li{list-style:none;line-height:1.2;font-size:14px;margin-bottom:.8em;}
-.headernav a.accent1{color:#FFF;}
-.headernav a.accent2{color:#70B1E4;}
-.headernav form{margin-top:-10px;}
-.headernav label{display:none;}
-.headernav .searchbox{height:19px;padding:5px;background:#062640;border:1px solid #555;color:#fff;position:relative;top:-5px;}
-.headernav .submitbutton{text-indent:1000%;white-space:nowrap;overflow:hidden;width:30px;height:31px;background:url(../images/siteheader_sprites.png) no-repeat 0 0px;border:0;position:relative;top:-6px;}
-.headernav p{font-size:13px;margin:5px 0 .8em 0;}
-#occheader.basic{height:300px;}
-.headernav.basic{position:relative;height:auto;}
-.secure{padding-left:15px;background:url(../images/siteheader_sprites.png) no-repeat -4px -47px;}

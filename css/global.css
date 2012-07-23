@@ -1,5 +1,5 @@
 /* GLOBAL.CSS (occ-specific stuff) */
-/* LOGO BADGE */
+/* LOGO BADGE (old) */
 #logo {
 float: left;
 position: absolute;
@@ -31,7 +31,7 @@ text-indent: -9999em;
 #logo:hover {
 background: #005372;
 }
-/* FIXED POSITION HEADER AREA */
+/* FIXED POSITION HEADER AREA (old)*/
 #banner_container {
 position: fixed;
 top: 0;
@@ -41,8 +41,8 @@ z-index: 999999;
 }
 #emergency {
 width: 100%;
-color:#FFF;
-background: #EE0000;
+color: #fff;
+background-color: #EE0000;
 }
 #emergency p,#banner_spacer p,#announcement p {
 padding: 1em 0 1em 220px;
@@ -67,9 +67,13 @@ background-color: #1799fe;
 #announcement p {
 background: url(../images/alerts/info.png) no-repeat 170px center;
 }
-
-
-/* NEW EMERGENCY HEADER, only on homepage, will add to sub-templates later, just need to remove #home_top and setup new includes */
+.ie7 #home_top #emergency {
+width: auto;
+}
+.ie7 #home_top #announcement {
+width: auto;
+}
+/* NEW EMERGENCY HEADER,only on homepage,will add to sub-templates later,just need to remove #home_top and setup new includes */
 #home_top #emergency p,#home_top #announcement p {
 padding: 1em 0 1em 45px;
 margin: 0 auto;
@@ -85,11 +89,7 @@ background: url(../images/alerts/warning.png) no-repeat 0px center;
 #home_top #announcement p {
 background: url(../images/alerts/info.png) no-repeat 0px center;
 }
-
-
-
-
-
+/* old site header */
 #siteheader {
 width: 100%;
 position: relative;
@@ -110,7 +110,7 @@ text-decoration: none;
 font-size: .8em;
 color: #666;
 }
-/* MEGA MENU PANEL */
+/* MEGA MENU PANEL (old) */
 #panel {
 position: absolute;
 top: 0px;
@@ -264,7 +264,7 @@ padding: 5px;
 background: #333;
 background: rgba(25,25,25,.35);
 }
-/* HEADER SEARCHBOX */
+/* HEADER SEARCHBOX (old) */
 #siteheader form {
 float: right;
 padding: 3px 0 0 0;
@@ -302,7 +302,7 @@ clear: none;
 embed,object {
 z-index: 0 !important
 }
-/* UNIVERSAL FOOTER */
+/* UNIVERSAL FOOTER (old) */
 #footer,footer {
 border-top: 1px solid #393939;
 color: #ccc;
@@ -374,12 +374,10 @@ margin-bottom: 5px;
 display: block;
 float: left;
 }
-.ie7 #footer,.ie8 #footer {
+.ie7 #footer {
 font-size: .7em;
 line-height: 1.2em;
 }
-
-
 /* OCC LOGO BADGE (new) */
 #occlogo {
 display: block;
@@ -395,67 +393,18 @@ white-space: nowrap;
 overflow: hidden;
 background: transparent url(../images/logo.png) no-repeat top left;
 }
-/* OCC FOOTER (new) */
-#occfooter {
-clear: both;
-background: #000;
-color: #aaa;
-font-size: .9em;
-display: block;
-padding: 1em 0 4em 0;
-margin-top: 4em;
-}
-#occfooter .logotext, #occfooter .tagline {
-font-family: 'minion pro', 'times new roman', serif;
-font-size: 1.25em;
-text-transform: uppercase;
-color: #fff;
-margin-bottom: 1em;
-font-weight: normal;
-}
-#occfooter .tagline {
-text-transform: none;
-}
-#occfooter a {
-color: #fff;
-}
-#occfooter .question {
-display: block;
-float: left;
-margin-right: 45px;
-background: #003151 url(../images/siteheader_sprites.png) no-repeat 5px -70px;
-padding: 10px 10px 10px 35px;
-font-size: 1.2em;
-border: 1px solid #3b5769;
-border-radius: 2px;
-}
-#occfooter .footerlinks {
-width: 500px;
-float: left;
-background: #222;
-outline: 1px solid #333;
-padding: 1em 0 1em 0;
-}
-#occfooter .footerlinks ul {
-list-style: none;
-padding: 0;
-float: left;
-margin: 0 1em 0 1em;
-}
-#occfooter .footerlinks li {
-line-height: 1.75;
-}
-/* GLOBAL HEADER (new) */
-#occheader {
+/* OCC HEADER DRAWER (new)*/
+#occheaderbg {
 height: 48px;
 width: 100%;
-position: absolute;
+position: relative;
 z-index: 1002;
 margin: 0 auto;
 background: #000;
 }
 .headernav {
 position: absolute;
+top: 0;
 overflow: hidden;
 z-index: 1004;
 padding-left: 220px;
@@ -465,8 +414,12 @@ height: 48px;
 display: inline-block;
 vertical-align: top;
 width: 174px;
-border-right: 1px solid rgba(255,255,255,.5);
+border-right: 1px solid #888;
 padding: 15px 0 0 5px;
+}
+.ie7 .headernav div {
+display: block;
+float: left;
 }
 .headernav .formbox {
 border: none;
@@ -483,7 +436,7 @@ height: 230px;
 .headernav li {
 list-style: none;
 line-height: 1.2;
-font-size: 14px;
+font-size: 13px;
 margin-bottom: .8em;
 }
 .headernav a.accent1 {
@@ -494,6 +447,9 @@ color: #70B1E4;
 }
 .headernav form {
 margin-top: -10px;
+}
+.ie7 .headernav form {
+margin-top: -3px;
 }
 .headernav label {
 display: none;
@@ -506,6 +462,7 @@ border: 1px solid #555;
 color: #fff;
 position: relative;
 top: -5px;
+width: 130px;
 }
 .headernav .submitbutton {
 text-indent: 1000%;
@@ -513,16 +470,38 @@ white-space: nowrap;
 overflow: hidden;
 width: 30px;
 height: 31px;
-background: url(../images/siteheader_sprites.png) no-repeat 0 0px;
+background: url(../images/siteheader_sprites.png) no-repeat 0 -1px;
 border: 0;
 position: relative;
+top: -6px;
+}
+.ie7 .headernav .submitbutton {
+top: -13px;
+background: #1799fe;
+color: #fff;
+}
+.ie8 .headernav .searchbox {
+top: -8px;
+}
+.ie8 .headernav .submitbutton {
+top: -5px;
+}
+.ie9 .headernav .searchbox {
+top: -8px
+}
+.ie9 .headernav .submitbutton {
+top: -8px;
+}
+.gecko .headernav .searchbox {
+top: -8px;
+}
+.gecko .headernav .submitbutton {
 top: -6px;
 }
 .headernav p {
 font-size: 13px;
 margin: 5px 0 .8em 0;
 }
-
 #occheader.basic {
 height: 300px;
 }
@@ -533,4 +512,52 @@ height: auto;
 .secure {
 padding-left: 15px;
 background: url(../images/siteheader_sprites.png) no-repeat -4px -47px;
+}
+/* OCC FOOTER (new) */
+#occfooter {
+clear: both;
+background: #000;
+color: #aaa;
+font-size: .9em;
+display: block;
+padding: 1em 0 4em 0;
+margin-top: 4em;
+}
+#occfooter .logotext,.tagline {
+font-family: 'minion pro','times new roman',serif;
+font-size: 1.25em;
+text-transform: uppercase;
+color: #fff;
+margin-bottom: 1em;
+font-weight: normal;
+}
+#occfooter .tagline {
+text-transform: none;
+}
+#occfooter a {
+color: #fff;
+}
+#occfooter .question {
+display: block;
+width: 185px;
+margin: 0 0 15px 0;
+background: #003151 url(../images/siteheader_sprites.png) no-repeat 5px -70px;
+padding: 10px 10px 10px 35px;
+font-size: 1em;
+border: 1px solid #3b5769;
+border-radius: 2px;
+}
+#occfooter .footerlinks {
+background: #222;
+outline: 1px solid #333;
+margin-top: 0px;
+}
+#occfooter .footerlinks ul {
+list-style: none;
+padding: 0;
+float: left;
+margin: 0 50px 0 0;
+}
+#occfooter .footerlinks li {
+line-height: 1.75;
 }
