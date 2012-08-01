@@ -89,6 +89,21 @@ embed,object{z-index:0 !important}
 /* IE7 doesn't understand display:inline-block */
 .ie7 #footer li{display:block;float:left;}
 .ie7 #footer{font-size:.7em;line-height:1.2em;}
+/* OCC FOOTER (new) */
+#occfooter{clear:both;background:#000;color:#aaa;font-size:.9em;display:block;padding:1em 0 4em 0;margin-top:4em; border-top:1px solid #000;
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(34,34,34,1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(34,34,34,1)));
+  background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(34,34,34,1) 100%);
+  background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(34,34,34,1) 100%);
+  }
+#occfooter .logotext,.tagline{font-family:'minion pro','times new roman',serif;font-size:1.25em;text-transform:uppercase;color:#fff;margin-bottom:1em;font-weight:normal;}
+#occfooter .tagline{text-transform:none; margin-bottom:1em;}
+#occfooter a{color:#fff;}
+#occfooter .question{display:block;background:transparent url(../images/footer_sprites.png) no-repeat 5px -70px;height:20px;padding:10px 0 10px 35px;font-size:1em;}
+#occfooter ul{list-style:none;padding:0;float:left;margin:0 50px 0 0;}
+#occfooter li{line-height:1; margin-bottom:.75em;}
+/* EKTRON */
 /* Ektron needs span id="cntDynamic" wrapped around every ID,and this disobeys #section>*,so I have to add this rule as a bandaid */
 #cntDynamic>*{margin-left:5px;margin-right:5px;}
 /* offsets everything to line up with the grid */
@@ -114,12 +129,3 @@ embed,object{z-index:0 !important}
 .menu .ekflexmenu_menu_level_2{display:none;}
 /* tier 2 links HACK! ie7 and ie8 targeting */
 .ie .menu ul ul .ekflexmenu_link_selected,.ie .menu ul ul .ekflexmenu_link:hover,.ie .menu ul ul .ekflexmenu_link_selected:hover{background-color:#888 !important;color:#FFF;}
-/* OCC FOOTER (new) */
-#occfooter{clear:both;background:#000;color:#aaa;font-size:.9em;display:block;padding:1em 0 4em 0;margin-top:4em;}
-#occfooter .logotext,.tagline{font-family:'minion pro','times new roman',serif;font-size:1.25em;text-transform:uppercase;color:#fff;margin-bottom:1em;font-weight:normal;}
-#occfooter .tagline{text-transform:none; margin-bottom:1em;}
-#occfooter a{color:#fff;}
-#occfooter .question{display:block;width:185px;margin:0 0 15px 0;background:#003151 url(../images/footer_sprites.png) no-repeat 5px -70px;padding:10px 10px 10px 35px;font-size:1em;border:1px solid #3b5769;border-radius:2px;}
-#occfooter .footerlinks{background:#222;outline:1px solid #333; margin-top:0px;}
-#occfooter .footerlinks ul{list-style:none;padding:0;float:left;margin:0 50px 0 0;}
-#occfooter .footerlinks li{line-height:1.75;}
