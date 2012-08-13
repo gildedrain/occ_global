@@ -90,7 +90,7 @@ embed,object{z-index:0 !important}
 .ie7 #footer li{display:block;float:left;}
 .ie7 #footer{font-size:.7em;line-height:1.2em;}
 /* OCC FOOTER (new) */
-#occfooter{clear:both;background:#000;color:#aaa;font-size:.9em;display:block;padding:1em 0 4em 0;margin-top:4em; border-top:1px solid #000;
+#occfooter{clear:both;background:#000;color:#aaa;font-size:.9em;display:block;padding:1em 0 4em 0;margin-top:2em; border-top:1px solid #000;
   background: rgb(0,0,0);
   background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(34,34,34,1) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(34,34,34,1)));
