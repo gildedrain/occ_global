@@ -32,7 +32,7 @@ $(document).ready(function() {
   var hideDelayTimer = null;
 
   // mouseenter event opens drawer
-  $('#home_top').mouseenter(function() {
+  $('#home_top, #top').mouseenter(function() {
     if (hideDelayTimer) clearTimeout(hideDelayTimer);
     if (visible == true) { // don't do anything if it's already visible
       return;
@@ -46,7 +46,7 @@ $(document).ready(function() {
   });
 
   // mouseleave event closes drawer after a delay
-  $('#home_top').mouseleave(function() {
+  $('#home_top, #top').mouseleave(function() {
     // reset the timer if we get fired again - avoids double animations
     if (hideDelayTimer) clearTimeout(hideDelayTimer);
     // store the timer so that it can be cleared in the mouseover if required

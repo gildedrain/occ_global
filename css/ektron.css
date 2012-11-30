@@ -1,14 +1,14 @@
-/* EKTRON */
+/* UNIVERSAL EKTRON OVERRIDES */
 /* Ektron needs span id="cntDynamic" wrapped around every ID,and this disobeys #section>*,so I have to add this rule as a bandaid */
 #cntDynamic>* {
 margin-left: 5px;
 margin-right: 5px;
 }
 /* offsets everything to line up with the grid */
-/* Hide Ektron's Ajax loading gif */
 .EktronAjaxLoading {
 display: none !important;
 }
+/* Hide Ektron's Ajax loading gif */
 /* Ektron FLEXMenu classes */
 /* 2 types of links:ekflexmenu_submenu_btnlink + ekflexmenu_link
 /* ekflexmenu_submenu_btnlink is the tier 1 entry that expands to show tier 2 list of links */

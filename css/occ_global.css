@@ -1,95 +1,42 @@
 /* GLOBAL.CSS (occ-specific stuff) */
-/* LOGO BADGE (old) */
-#logo{float:left;position:absolute;top:0px;margin-left:0px;padding:15px 0 15px 0;z-index:9999999999;text-align:center;border:1px solid #003151;border-width:0 3px 2px 3px;border-radius:0 0 7px 7px;-webkit-border-radius:0 0 7px 7px;-moz-border-radius:0 0 7px 7px;background:#003151;background:#003151 -webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,.2)),to(rgba(255,255,255,0)));background:#003151 -moz-linear-gradient(top,rgba(255,255,255,.2),rgba(255,255,255,0));box-shadow:0px 1px 2px #aaa;-webkit-box-shadow:0px 1px 2px #aaa;-moz-box-shadow:0px 1px 2px #aaa;}
-#logo .logo{display:block;width:119px;height:85px;margin-left:14px;background:transparent url(../images/header/occlogo.gif) no-repeat top left !important;text-indent:-9999em;}
-#logo:hover{background:#005372;}
-/* FIXED POSITION HEADER AREA (old)*/
-#banner_container{position:fixed;top:0;left:0;width:100%;z-index:999999;}
-#emergency{width:100%;color:#fff;background-color:#EE0000;}
-#emergency p,#banner_spacer p,#announcement p{padding:1em 0 1em 220px;margin:0 auto;width:740px;color:#fff;text-shadow:#000 0 1px 0;-webkit-text-shadow:#000 0 1px 0;-moz-text-shadow:#000 0 1px 0;}
-#banner_spacer p{margin-bottom:34px;}
-#emergency p{background:url(../images/alerts/warning.png) no-repeat 170px center;}
-#announcement{width:100%;color:#FFF;background-color:#1799fe;}
-#announcement p{background:url(../images/alerts/info.png) no-repeat 170px center;}
-.ie7 #home_top #emergency {width:auto;}
-.ie7 #home_top #announcement {width:auto;}
-/* NEW EMERGENCY HEADER,only on homepage,will add to sub-templates later,just need to remove #home_top and setup new includes */
-#home_top #emergency p,#home_top #announcement p{padding:1em 0 1em 45px;margin:0 auto;width:895px;color:#fff;text-shadow:#000 0 1px 0;-webkit-text-shadow:#000 0 1px 0;-moz-text-shadow:#000 0 1px 0;}
-#home_top #emergency p{background:url(../images/alerts/warning.png) no-repeat 0px center;}
-#home_top #announcement p{background:url(../images/alerts/info.png) no-repeat 0px center;}
-/* old site header */
-#siteheader{width:100%;position:relative;top:0;height:40px;background:#000;background:rgba(0,0,0,.9);border:1px solid #666;border-width:1px 0 1px 0;}
-#skipnav{position:absolute;top:0;left:0;margin-left:-9999em;color:#fff;text-decoration:none;font-size:.8em;color:#666;}
-/* MEGA MENU PANEL (old) */
-#panel{position:absolute;top:0px;width:310px;float:left;margin-left:165px;padding:0;overflow:hidden;border-radius:0 0 7px 7px;-webkit-box-shadow:0px 1px 2px #000;-moz-box-shadow:0 1px 2px #000;background-color:#003151;background:#003151 -webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,.2)),to(rgba(255,255,255,0)));background:#003151 -moz-linear-gradient(top,rgba(255,255,255,.2),rgba(255,255,255,0));border:1px solid #444;border-top-width:0;transition:background-color .2s ease-in-out;-webkit-transition:background-color .2s ease-in-out;-moz-transition:background-color .2s ease-in-out;}
-/* toggle button look & feel */
-.toggle{display:block;float:left;height:34px;width:100%;padding:13px 3% 0 3%;color:#FFF;font-size:70%;}
-.toggle span{float:right;height:25px;width:80px;padding:2px 0 4px 24px;margin-top:-2px;background-image:url(../images/header/paneltoggle.png);background-repeat:no-repeat;background-position:0 0px;}
-.toggle.close span{background-position:5px -50px;}
-/* BASIC functionality -- these classes are used when javascript is disabled -- HTML+CSS and JS disabled */
-/* .basic engages basic-level interaction. JQuery removes .basic before applying it's own layer of interaction */
-#panel.basic:hover{height:auto;}
-#panel.basic{height:34px;}
-#panel.basic #toggle_open,#panel.basic:hover #toggle_open{display:block;}
-/* IE required this added specificity because IE is stupid */
-#panel.basic:hover #toggle_close{display:none;}
-/* only say "open panel" all the time for the dumb browsers */
-/* FANCY functionality -- these classes are only in use when Javascript is enabled -- HTML+CSS+Javascript */
-#panel.closed:hover{background-color:#0069ad;padding-bottom:10px;}
-/* jiggle the menu so people know it's something they can interact with */
-#panel.closed #toggle_open,#panel.closed:hover #toggle_open{display:block;}
-/* IE required this added specificity because IE is stupid */
-#panel.closed #toggle_close{display:none;}
-#panel.closed #subpanel{display:none;}
-#panel.opened #toggle_open,#panel.opened:hover #toggle_open{display:none;}
-/* IE required this added specificity because IE is stupid */
-#panel.opened:hover #toggle_close{display:block;}
-#panel.opened:hover #subpanel{display:block;}
-/* menu look & feel */
-#panel ul{float:left;padding:0;margin:0;}
-#panel li{float:left;display:block;margin:0;width:310px;border-top:1px solid #32698d;}
-#panel a{display:block;height:2em;width:100%;color:#FFF;text-decoration:none;}
-#panel ul a:hover{background-color:#000;}
-/* universal quicklinks */
-#megamenu_home,#megamenu_news,#megamenu_calendar,#megamenu_directory,#megamenu_maps,#megamenu_contact{float:;display:block;margin:0;width:310px;padding:0 10px 0 40px;line-height:2em;background-repeat:no-repeat;background-image:url(../images/header/megamenu.png);}
-#megamenu_home{background-position:10px 0;}
-#megamenu_news{background-position:10px -32px;}
-#megamenu_calendar{background-position:10px -64px;}
-#megamenu_directory{background-position:10px -96px;}
-#megamenu_maps{background-position:10px -128px;}
-#megamenu_contact{background-position:10px -160px;}
-/* local site quicklinks */
-#subpanel p{float:left;background:#333;background:rgba(25,25,25,.35);margin:0px;font-style:italic;color:#FFF;border-top:1px solid #1799fe;width:100%;padding:5px;}
-#subpanel .local{background:#333;background:rgba(25,25,25,.35);}
-/* HEADER SEARCHBOX (old) */
-#siteheader form{float:right;padding:3px 0 0 0;}
-#siteheader input{float:left;height:19px;width:225px;margin:5px 5px 7px 0;padding:2px 0 0 10px;-webkit-border-radius:5px;-moz-border-radius:5px;border-radius:5px;font-size:.8em;color:#333;border:1px solid #aaa;border-bottom:1px solid #666;background:#FFF -webkit-gradient(linear,left top,left bottom,from(rgba(0,49,81,.1)),to(rgba(255,255,255,0)));background:#FFF -moz-linear-gradient(top,rgba(0,49,81,.1),rgba(255,255,255,0));}
-#siteheader .searchbutton{height:23px;width:45px;text-indent:-4000em;border-width:0;background:transparent url(../images/header/searchbutton.jpg) no-repeat 0 0;}
-#siteheader .searchbutton:hover{background-position:0 -23px;}
-#siteheader input[type=submit]{display:inline;clear:none;}
-embed,object{z-index:0 !important}
-/* UNIVERSAL FOOTER (old) */
-#footer,footer{border-top:1px solid #393939;color:#ccc;height:95px;padding-top:20px;padding-bottom:10px;font-size:.9em;background:#393939;background:#393939 -moz-linear-gradient(top,rgba(0,0,0,.45),rgba(0,0,0,0));background:#393939 -webkit-gradient(linear,left top,left bottom,from(rgba(0,0,0,.45)),to(rgba(0,0,0,0)));}
-#footer a.logo,footer a.logo{width:118px;height:72px;float:left;margin-top:5px;text-indent:-9999em;background:transparent url(../images/footer/occlogo_footer.gif) no-repeat top left !important;}
-#footer a,footer a{color:#ccc;text-decoration:underline;}
-#footer a:hover,footer a:hover{color:#FFF;}
-#footer p,footer p{margin-bottom:.25em;margin-top:.5em;}
-#footer ul,footer ul{list-style:none;padding:2em 0 0 20px;height:50px;}
-#footer li,footer li{display:inline-block;margin-right:20px;}
-#footer .col3 ul,footer .col3 ul{border-left:1px solid #666;}
-/*HACKS*/
-.ie #logo{border:1px solid #666;border-width:0 1px 1px 1px;}
-.ie #panel{background:#003151;}
-.ie #panel:hover{height:auto;}
-.ie #panel .toggle span{*margin-top:-12px;}
-/* IE7,but not IE8 */
-.ie #panel:hover a.toggle:first-child{display:none;}
-.ie #siteheader .searchbutton{padding-left:45px;width:45px;}
-.ie #siteheader form{margin-bottom:5px;}
-/* IE7 doesn't understand display:inline-block */
-.ie7 #footer li{display:block;float:left;}
-.ie7 #footer{font-size:.7em;line-height:1.2em;}
-/* OCC FOOTER (new) */
+/* UNIVERSAL EMERGENCY HEADER */
+#emergency {background-color:#EE0000; color:#FFF;}
+#announcement {background-color:#1799fe; color:#FFF;}
+#emergency p, #announcement p{padding:1em 0 1em 45px;margin:0 auto;width:auto;color:#fff;text-shadow:#000 0 1px 0;-webkit-text-shadow:#000 0 1px 0;-moz-text-shadow:#000 0 1px 0;}
+#emergency p{background:url(../../gui/images/alerts/warning.png) no-repeat 5px center;}
+#announcement p{background:url(../../gui/images/alerts/info.png) no-repeat 5px center;}
+/* UNIVERSAL LOGO BADGE */
+#occlogo{width:404px;height:100px;position:relative;z-index:1003;left:-100px;top:0;margin:0 0 -100px 0;white-space:nowrap;overflow:hidden;background:transparent url(../../occ_global/images/occlogo.png) no-repeat top left;}
+#occlogo a {display:block;text-indent:1000%; height:100px;}
+/* UNIVERSAL HEADERNAV DRAWER */
+#occheaderbg{position:absolute; left:0; height:400px;width:100%;z-index:1002;background:#000;}
+.headernav{position:relative;top:0;overflow:hidden;z-index:1004;padding-left:220px;height:48px;}
+/* jquery toggle classes */
+#occheaderbg.closed, .headernav.closed {height:48px;}
+#occheaderbg.opened, .headernav.opened {height:230px;}
+/* header contents */
+.headernav div{display:inline-block;vertical-align:top;width:174px;border-right:1px solid #555;padding:15px 0 0 5px; margin-left:4em;}
+  .ie7 .headernav div {display:block; float:left;}
+.headernav .formbox{border:none; margin-left:.5em;}
+.headernav h3{text-transform:uppercase;color:#1799fe;font-size:1em; font-weight:200;padding:0 0 0 25px; background:transparent url(../../gui/images/tap_menu_icon.gif) no-repeat center left;}
+.headernav ul{padding:0 0 1em 0;height:auto;}
+.headernav li{list-style:none;font-size:.9em; margin-bottom:1em;}
+  .ie7 .headernav li, .ie8 .headernav li {font-size:.8em;}
+.headernav a {display:block; line-height:1.2;}
+.headernav form {margin-top:-7px;}
+.headernav label{display:none;}
+.headernav .searchbox{height:19px;padding:5px;background:#333;border:1px solid #444; border-right-width:0; color:#fff;position:relative;width:130px;font-style:normal;border-radius:3px 0 0 3px;}
+.headernav .submitbutton{text-indent:1000%;white-space:nowrap;overflow:hidden;width:30px;height:31px;background:url(../../occ_global/images/occ_global_sprites.png) no-repeat 0 0;border:1px solid #444;border-width:1px 0 1px 0; position:relative; padding:0; margin:0;}
+  .ie7 .headernav .submitbutton {top:-7px; background:#1799fe; color:#fff; height:31px;}
+  .ie8 .headernav .submitbutton {top:2px; background:#1799fe; color:#fff; height:31px; text-indent:0; overflow:visible; white-space:normal;}
+.headernav p{font-size:13px;margin:.8em 0 .4em 0;}
+#occheader.basic{height:300px;}
+.headernav.basic{position:relative;height:auto;}
+.secure{padding-left:15px;background:url(../../occ_global/images/occ_global_sprites.png) no-repeat -4px -47px;}
+/* UNIVERSAL MAIN CONTENT AREA */
+#main {background:#fff url(../../occ_global/images/index_page_top_tile.jpg) repeat-x top left;}
+#menutitle {font-weight:200; padding-top:2em;}
+/* UNIVERSAL FOOTER */
 #occfooter{clear:both;background:#000;color:#aaa;font-size:.9em;display:block;padding:1em 0 4em 0;margin-top:2em; border-top:1px solid #000;
   background: rgb(0,0,0);
   background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(34,34,34,1) 100%);
@@ -100,21 +47,65 @@ embed,object{z-index:0 !important}
 #occfooter .logotext,.tagline{font-family:'minion pro','times new roman',serif;font-size:1.25em;text-transform:uppercase;color:#fff;margin-bottom:1em;font-weight:normal;}
 #occfooter .tagline{text-transform:none; margin-bottom:1em;}
 #occfooter a{color:#fff;}
-#occfooter .question{display:block;background:transparent url(../images/footer_sprites.png) no-repeat 5px -70px;height:20px;padding:10px 0 10px 35px;font-size:1em;}
+#occfooter .question{display:block;background:transparent url(../images/occ_global_sprites.png) no-repeat 0px -70px;height:20px;padding:10px 0 10px 30px;font-size:1em; margin-bottom:.75em;}
 #occfooter ul{list-style:none;padding:0;float:left;margin:0 50px 0 0;}
 #occfooter li{line-height:1; margin-bottom:.75em;}
-/* EKTRON */
+/* UNIVERSAL MEDIA QUERIES */
+@media all and (max-width:970px),(max-width:550px){
+  .container{width:100%;margin:0;padding:0;}
+  #section,#section.hasmenu{float:none;margin:0;width:100%;padding:0;}
+}
+@media all and (max-width:970px){
+  .precoldot5, .precol1, .precol2, .precol3, .precol4, .precol5, .precol6 {margin-left:5px !important;}
+  .col1{width:14.75%;}
+  .col1dot5{width:23%;}
+  .col2{width:31.3%;}
+  .col3{width:48%;}
+  .col4{width:66%;}
+  .col5{width:82%;}
+  .col6{width:95%;}
+  .nest {width:100%;}
+  #occlogo {background-image:url(../images/occlogo_variant1.jpg); width:100%; background-color:#000;left:0;background-position:0 2px;}
+  #occheaderbg, .headernav {margin-top:50px;}
+  .headernav {position:relative;overflow:hidden;padding-left:0;background:#000;width:100%;border-top:1px solid #333;height:auto;}
+  .headernav div{width:25%; margin-left:0;}
+  .headernav h3, .headernav li {font-size:90%;}
+  .headernav h3 {margin:.25em 0 1em 0;}
+  #occfooter .tagline, #occfooter .logotext {width:48%;}
+  #occfooter .tagline {margin-bottom:2em;}
+  #aside, .aside, aside, #aside >*, .aside>*, aside>*, .menu li a, .menu ul ul a {width:97%; display:block; padding-left:5px; padding-right:0; max-width:97%;}
+}
+@media all and (max-width:550px){
+  .col1,.col1dot5,.col2,.col3,.col4,.col5,.col6{width:97%;float:none;clear:both;margin:0 0 0 5px;padding:0;}
+  #occlogo {position:relative;margin:0;height:30px; background-image:url(../images/occlogo_variant2.gif);background-position:0 -8px;}
+  #occlogo a, #occheaderbg{display:none;} /* logo link disabled for small UI */
+  .headernav{position:relative;overflow:hidden;padding-left:0;background:#000;width:100%;margin:0;}
+  #occheaderbg.opened, .headernav.opened {height:auto;}
+  .headernav div{display:block;vertical-align:top;width:45%;margin-left:5px;float:left;}
+    .ie7 .headernav div {float:none;}
+  .headernav form {margin-bottom:1px;}
+  .headernav h3{margin-bottom:3em;}
+  .headernav li {margin-bottom:1.5em;}
+  .headernav.basic{position:relative;height:auto;background:#000;}
+  .headernav .secure{padding-left:20px;background-position:0px -47px;}
+  .headernav .searchbox{width:100px;}
+  #occfooter {margin-top:0; padding:1em 5px 1em 5px;}
+  #occfooter .tagline, #occfooter .logotext {width:100%; }
+  #occfooter .textright {text-align:left;}
+  .left,.right{float:none;}
+  .polaroid{display:none;}
+  .bg_slideshow {margin-top:0px;}
+  .bg_slideshow_controls{position:relative;float:right;z-index:6;top:10px;margin:0;width:135px;list-style:none;padding:0;}
+}
+/* UNIVERSAL EKTRON OVERRIDES */
 /* Ektron needs span id="cntDynamic" wrapped around every ID,and this disobeys #section>*,so I have to add this rule as a bandaid */
-#cntDynamic>*{margin-left:5px;margin-right:5px;}
-/* offsets everything to line up with the grid */
-/* Hide Ektron's Ajax loading gif */
-.EktronAjaxLoading{display:none !important;}
+#cntDynamic>*{margin-left:5px;margin-right:5px;} /* offsets everything to line up with the grid */
+.EktronAjaxLoading{display:none !important;}/* Hide Ektron's Ajax loading gif */
 /* Ektron FLEXMenu classes */
 /* 2 types of links:ekflexmenu_submenu_btnlink + ekflexmenu_link
 /* ekflexmenu_submenu_btnlink is the tier 1 entry that expands to show tier 2 list of links */
 /* ekflexmenu_link is a tier 1 or tier 2 entry that will never contain a subtier of links */
-.menu .ekflexmenu_submenu_items_hidden{display:none;}
-/* hide tiers that aren't opened yet */
+.menu .ekflexmenu_submenu_items_hidden{display:none;} /* hide tiers that aren't opened yet */
 /* tier 1 */
 .menu .ekflexmenu_submenu_btnlink:hover,
 .menu .ekflexmenu_link:hover,
