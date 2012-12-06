@@ -19,7 +19,7 @@ a, p, td, li {font-weight:200;}
 .headernav div{display:inline-block;vertical-align:top;width:174px;border-right:1px solid #555;padding:15px 0 0 5px; margin-left:4em;}
   .ie7 .headernav div {display:block; float:left;}
 .headernav .formbox{border:none; margin-left:.5em;}
-.headernav h3{text-transform:uppercase;color:#1799fe;font-size:1em; font-weight:200;padding:0 0 0 25px; background:transparent url(../../gui/images/tap_menu_icon.gif) no-repeat center left;}
+.headernav .tap-title {font-size:1em; margin:0 0 1em 0; padding:0 0 0 25px; background:transparent url(../../gui/images/tap_menu_icon.gif) no-repeat center left;}
 .headernav ul{padding:0 0 1em 0;height:auto;}
 .headernav li{list-style:none;font-size:.9em; margin-bottom:1em;}
   .ie7 .headernav li, .ie8 .headernav li {font-size:.8em;}

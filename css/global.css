@@ -82,13 +82,11 @@ float: left;
 border: none;
 margin-left: .5em;
 }
-.headernav h3 {
-text-transform: uppercase;
-color: #1799fe;
-font-size: 1em;
-font-weight: 200;
-padding: 0 0 0 25px;
-background: transparent url(../../gui/images/tap_menu_icon.gif) no-repeat center left;
+.headernav .tap-title {
+  font-size:1em;
+  margin:0 0 1em 0;
+  padding:0 0 0 25px;
+  background:transparent url(../../gui/images/tap_menu_icon.gif) no-repeat center left;
 }
 .headernav ul {
 padding: 0 0 1em 0;
