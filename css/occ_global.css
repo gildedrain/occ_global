@@ -1,4 +1,5 @@
 /* GLOBAL.CSS (occ-specific stuff) */
+a, p, td, li {font-weight:200;}
 /* UNIVERSAL EMERGENCY HEADER */
 #emergency {background-color:#EE0000; color:#FFF;}
 #announcement {background-color:#1799fe; color:#FFF;}
@@ -37,7 +38,7 @@
 #main {background:#fff url(../../occ_global/images/index_page_top_tile.jpg) repeat-x top left;}
 #menutitle {font-weight:200; padding-top:2em;}
 /* UNIVERSAL FOOTER */
-#occfooter{clear:both;background:#000;color:#aaa;font-size:.9em;display:block;padding:1em 0 4em 0;margin-top:2em; border-top:1px solid #000;
+#occfooter{clear:both;background:#000;color:#aaa;font-size:.9em;display:block;padding:2em 0 4em 0;border-top:1px solid #000; margin:0;
   background: rgb(0,0,0);
   background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(34,34,34,1) 100%);
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(34,34,34,1)));
@@ -92,6 +93,9 @@
   #occfooter {margin-top:0; padding:1em 5px 1em 5px;}
   #occfooter .tagline, #occfooter .logotext {width:100%; }
   #occfooter .textright {text-align:left;}
+  #occfooter ul{float:none;margin:0;}
+  #occfooter ul a, #occfooter p {display:block; text-align:left;}
+  #occfooter li {padding:1.5em 0 .8em 0; border-top:1px solid #333;}
   .left,.right{float:none;}
   .polaroid{display:none;}
   .bg_slideshow {margin-top:0px;}
