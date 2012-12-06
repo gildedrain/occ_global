@@ -1,5 +1,5 @@
 /* GLOBAL.CSS (occ-specific stuff) */
-a, p, td, li {font-weight:200;}
+body {font-weight:200;}
 /* UNIVERSAL EMERGENCY HEADER */
 #emergency {background-color:#EE0000; color:#FFF;}
 #announcement {background-color:#1799fe; color:#FFF;}
@@ -35,8 +35,10 @@ a, p, td, li {font-weight:200;}
 .headernav.basic{position:relative;height:auto;}
 .secure{padding-left:15px;background:url(../../occ_global/images/occ_global_sprites.png) no-repeat -4px -47px;}
 /* UNIVERSAL MAIN CONTENT AREA */
+body {background:#222;}
 #main {background:#fff url(../../occ_global/images/index_page_top_tile.jpg) repeat-x top left;}
-#menutitle {font-weight:200; padding-top:2em;}
+#section h2, #menutitle {color:#aaa; font-weight:200; letter-spacing:-1px; margin:0 5px .25em 5px; font-size:2.5em; padding:1.5em 0 .25em 0; width:auto; text-shadow:0 2px 3px #000;}
+#section h2 {background:#222; border-radius:5px; padding:.5em;}
 /* UNIVERSAL FOOTER */
 #occfooter{clear:both;background:#000;color:#aaa;font-size:.9em;display:block;padding:2em 0 4em 0;border-top:1px solid #000; margin:0;
   background: rgb(0,0,0);
