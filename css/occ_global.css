@@ -1,5 +1,5 @@
 /* GLOBAL.CSS (occ-specific stuff) */
-body {font-weight:200;}
+body, td {font-weight:200;}
 /* UNIVERSAL EMERGENCY HEADER */
 #emergency {background-color:#EE0000; color:#FFF;}
 #announcement {background-color:#1799fe; color:#FFF;}
@@ -19,7 +19,8 @@ body {font-weight:200;}
 .headernav div{display:inline-block;vertical-align:top;width:174px;border-right:1px solid #555;padding:15px 0 0 5px; margin-left:4em;}
   .ie7 .headernav div {display:block; float:left;}
 .headernav .formbox{border:none; margin-left:.5em;}
-.headernav .tap-title {font-size:1em; margin:0 0 1em 0; padding:0 0 0 25px; background:transparent url(../../gui/images/tap_menu_icon.gif) no-repeat center left;}
+.headernav .headernav-title {font-size:1em; margin:0 0 1em 0;}
+.tap-icon {padding:0 0 0 25px; background:transparent url(../../gui/images/tap_menu_icon.gif) no-repeat center left;}
 .headernav ul{padding:0 0 1em 0;height:auto;}
 .headernav li{list-style:none;font-size:.9em; margin-bottom:1em;}
   .ie7 .headernav li, .ie8 .headernav li {font-size:.8em;}
@@ -37,8 +38,7 @@ body {font-weight:200;}
 /* UNIVERSAL MAIN CONTENT AREA */
 body {background:#222;}
 #main {background:#fff url(../../occ_global/images/index_page_top_tile.jpg) repeat-x top left;}
-#section h2, #menutitle {color:#aaa; font-weight:200; letter-spacing:-1px; margin:0 5px .25em 5px; font-size:2.5em; padding:1.5em 0 .25em 0; width:auto; text-shadow:0 2px 3px #000;}
-#section h2 {background:#222; border-radius:5px; padding:.5em;}
+#menutitle {color:#aaa; font-weight:200; letter-spacing:-1px; margin:0 5px .25em 5px; font-size:2.5em; padding:1.5em 0 .25em 0; width:auto; text-shadow:0 2px 3px #000;}
 /* UNIVERSAL FOOTER */
 #occfooter{clear:both;background:#000;color:#aaa;font-size:.9em;display:block;padding:2em 0 4em 0;border-top:1px solid #000; margin:0;
   background: rgb(0,0,0);
