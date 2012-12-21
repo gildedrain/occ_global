@@ -1,53 +1,36 @@
-// --------------------------------------------------------------------------------------//
 // BEGIN JQUERY TOOLS -------------------------------------------------------------------//
-// --------------------------------------------------------------------------------------//
 $(document).ready(function() {
-// Open/Close Animation for Site Header Navigation "Drawer"
-// requires JQUERY UI EFFECTS CORE - but only for .switchClass()
-  // disable basic functionality
-  $('#occheaderbg, .headernav').removeClass('basic');
-  $('#occheaderbg, .headernav').addClass('closed');
-  // trackers & units
-  var showHeader = false; // Initially, it SHOULD NOT be shown
-  var visible = false; // Initially, it IS NOT shown
-  var showDelay = 500;
-  var hideDelay = 750;
-  var DelayTimer = null;
-  // mouseenter event opens drawer
-  $('#home_top, #top').mouseenter(function() {
-    if (DelayTimer) clearTimeout(DelayTimer);
-    if (visible == true) { // don't do anything if it's already visible
-      return;
+  // Open/Close Animation for "Drawer"
+  // .switchClass() requires JQUERY UI EFFECTS CORE
+  var $drawer = $('.js-drawer');
+  window.contentsVisible = false;
+  $('.js-drawer-toggle').on('click', function(event) {
+    if (window.contentsVisible) {
+      drawerClose();
+      window.contentsVisible = false;
     }
     else {
-      DelayTimer = setTimeout(function () {
-        DelayTimer = null;
-        showHeader = true;
-        if (showHeader == true && visible == false) {
-          headerOpen();
-        }
-      }, showDelay);
+      drawerOpen();
+      window.contentsVisible = true;
+    }
+    event.stopPropagation();
+  });
+  $('.js-drawer-open-only').on('click', function() {
+    drawerOpen();
+    window.contentsVisible = true;
+    event.stopPropagation();
+  });
+  $closers = $('#main, #menutitle, .bg_slideshow')
+  $closers.on('click', function() {
+    if (window.contentsVisible) {
+      drawerClose();
+      window.contentsVisible = false;
     }
   });
-  // mouseleave event closes drawer after a delay
-  $('#home_top, #top').mouseleave(function() {
-    // reset the timer if we get fired again - avoids double animations
-    if (DelayTimer) clearTimeout(DelayTimer);
-    // store the timer so that it can be cleared in the mouseover if required
-    DelayTimer = setTimeout(function () {
-      DelayTimer = null;
-      showHeader = false;
-      if (showHeader == false && visible == true) {
-        headerClose();
-      }
-    }, hideDelay);
-  });
-  function headerOpen () {
-    $('#occheaderbg, .headernav').switchClass('closed', 'opened', 150);
-    visible = true;
+  function drawerOpen () {
+    $drawer.switchClass('closed', 'opened', 150);
   }
-  function headerClose () {
-    $('#occheaderbg, .headernav').switchClass('opened', 'closed', 150);
-    visible = false;
+  function drawerClose () {
+    $drawer.switchClass('opened', 'closed', 150);
   }
 });
