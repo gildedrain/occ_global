@@ -74,7 +74,7 @@ body {background:#222;}
   .nest {width:100%;}
   #occlogo {background-image:url(../images/occlogo_variant1.jpg); width:100%; background-color:#000;left:0;background-position:0 2px;}
   #occheaderbg, .headernav {margin-top:50px; margin-left:0;}
-  .headernav {position:relative;overflow:hidden;padding-left:0;background:#000;width:100%;border-top:1px solid #333;height:auto;}
+  .headernav {position:relative;overflow:hidden;padding-left:0;background:#000;width:100%;border-top:1px solid #333;}
   .headernav div{width:25%; margin-left:0;}
   .headernav .headernav-title, .headernav li {font-size:90%;}
   .headernav .headernav-title {margin:.25em 0 1em 0;}
@@ -94,7 +94,6 @@ body {background:#222;}
   .headernav .headernav-title{margin-bottom:1.5em;}
   .headernav .formbox p {margin:1em 0 1.5em 0;}
   .headernav li {margin-bottom:1.5em;}
-  .headernav.basic{position:relative;height:auto;background:#000;}
   .headernav .secure{padding-left:20px;background-position:0px -47px;}
   .headernav .searchbox{width:100px;}
   #occfooter {margin-top:0; padding:1em 5px 1em 5px;}
@@ -123,7 +122,7 @@ body {background:#222;}
 .menu .ekflexmenu_link:hover,
 .menu .ekflexmenu_link_selected,
 .menu .ekflexmenu_link_selected:hover,
-.menu .ekflexmenu_button_selected{color:#FFF !important;background-color:#1799fe !important;}
+.menu .ekflexmenu_button_selected{color:#FFF;background-color:#1799fe;}
 /* tier 2 */
 .menu ul ul .ekflexmenu_link_selected,
 .menu ul ul .ekflexmenu_link:hover,

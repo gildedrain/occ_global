@@ -1,4 +1,7 @@
 /* GLOBAL.CSS (occ-specific stuff) */
+body, td {
+font-weight: 200;
+}
 /* UNIVERSAL EMERGENCY HEADER */
 #emergency {
 background-color: #EE0000;
@@ -45,7 +48,7 @@ height: 100px;
 #occheaderbg {
 position: absolute;
 left: 0;
-height: 400px;
+height: 48px;
 width: 100%;
 z-index: 1002;
 background: #000;
@@ -56,14 +59,14 @@ top: 0;
 overflow: hidden;
 z-index: 1004;
 padding-left: 220px;
+margin-left: 4em;
 height: 48px;
+width: auto;
+display: inline-block;
 }
 /* jquery toggle classes */
-#occheaderbg.closed, .headernav.closed {
-height: 48px;
-}
 #occheaderbg.opened, .headernav.opened {
-height: 230px;
+height: 220px;
 }
 /* header contents */
 .headernav div {
@@ -72,7 +75,6 @@ vertical-align: top;
 width: 174px;
 border-right: 1px solid #555;
 padding: 15px 0 0 5px;
-margin-left: 4em;
 }
   .ie7 .headernav div {
 display: block;
@@ -82,27 +84,60 @@ float: left;
 border: none;
 margin-left: .5em;
 }
-.headernav .tap-title {
-  font-size:1em;
-  margin:0 0 1em 0;
-  padding:0 0 0 25px;
-  background:transparent url(../../gui/images/tap_menu_icon.gif) no-repeat center left;
+.formbox p {
+font-size: 13px;
+margin: 1em 0 .4em .4em;
+}
+.headernav .headernav-title {
+font-size: 1em;
+margin: 0 0 1em 0;
+cursor: pointer;
+}
+.tap-icon {
+padding: 0 0 0 25px;
+background: transparent url(../../gui/images/tap_menu_icon.gif) no-repeat center left;
+cursor: pointer;
+}
+.headernav .close-headernav {
+clear: both;
+display: block;
+color: #aaa;
+text-align: center;
+padding: .25em 0 .25em 60px;
+border-top: 1px solid #555;
+background-image: url(../../gui/images/16px_icons.png);
+background-position: center -1550px;
+background-repeat: no-repeat;
+}
+.headernav .close-headernav:hover {
+background-color: #1179fe;
+color: #fff;
 }
 .headernav ul {
-padding: 0 0 1em 0;
+padding: 0;
 height: auto;
+margin: 0;
 }
 .headernav li {
 list-style: none;
 font-size: .9em;
-margin-bottom: 1em;
+margin-bottom: 0;
 }
   .ie7 .headernav li, .ie8 .headernav li {
 font-size: .8em;
 }
 .headernav a {
 display: block;
-line-height: 1.2;
+padding: .5em 0 .5em .4em;
+}
+.headernav .secure {
+padding-left: 20px;
+background: url(../../occ_global/images/occ_global_sprites.png) no-repeat 0px -41px;
+}
+.headernav a:hover {
+background-color: #1179fe;
+color: #fff;
+text-decoration: none;
 }
 .headernav form {
 margin-top: -7px;
@@ -120,7 +155,7 @@ color: #fff;
 position: relative;
 width: 130px;
 font-style: normal;
-border-radius: 3px 0 0 3px;
+border-radius: 2px 0 0 2px;
 }
 .headernav .submitbutton {
 text-indent: 1000%;
@@ -134,6 +169,7 @@ border-width: 1px 0 1px 0;
 position: relative;
 padding: 0;
 margin: 0;
+border-radius: 0 2px 2px 0;
 }
   .ie7 .headernav .submitbutton {
 top: -7px;
@@ -150,39 +186,48 @@ text-indent: 0;
 overflow: visible;
 white-space: normal;
 }
-.headernav p {
-font-size: 13px;
-margin: .8em 0 .4em 0;
+.no-js #occheaderbg {
+height: 195px;
 }
-#occheader.basic {
-height: 300px;
-}
-.headernav.basic {
+.no-js .headernav {
 position: relative;
 height: auto;
 }
-.secure {
-padding-left: 15px;
-background: url(../../occ_global/images/occ_global_sprites.png) no-repeat -4px -47px;
+.no-js .headernav .close-headernav {
+display: none;
 }
 /* UNIVERSAL MAIN CONTENT AREA */
+body {
+background: #222;
+}
 #main {
 background: #fff url(../../occ_global/images/index_page_top_tile.jpg) repeat-x top left;
+border-top: 1px solid #bbb;
+box-shadow: 0 0 25px #000;
 }
 #menutitle {
+color: #aaa;
 font-weight: 200;
-padding-top: 2em;
+letter-spacing: -1px;
+margin: 0 5px .25em 5px;
+font-size: 2.5em;
+padding: 1.5em 0 .25em 0;
+width: auto;
+text-shadow: 0 2px 3px #000;
+}
+#section h3 {
+margin-top: .5em;
 }
 /* UNIVERSAL FOOTER */
 #occfooter {
 clear: both;
 background: #000;
 color: #aaa;
-font-size: .9em;
+font-size: .8em;
 display: block;
-padding: 1em 0 4em 0;
-margin-top: 2em;
+padding: 2em 0 4em 0;
 border-top: 1px solid #000;
+margin: 0;
 background: rgb(0,0,0);
 background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(34,34,34,1) 100%);
 background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(34,34,34,1)));
@@ -274,6 +319,7 @@ background-position: 0 2px;
 }
   #occheaderbg, .headernav {
 margin-top: 50px;
+margin-left: 0;
 }
   .headernav {
 position: relative;
@@ -282,16 +328,15 @@ padding-left: 0;
 background: #000;
 width: 100%;
 border-top: 1px solid #333;
-height: auto;
 }
   .headernav div {
 width: 25%;
 margin-left: 0;
 }
-  .headernav h3, .headernav li {
+  .headernav .headernav-title, .headernav li {
 font-size: 90%;
 }
-  .headernav h3 {
+  .headernav .headernav-title {
 margin: .25em 0 1em 0;
 }
   #occfooter .tagline, #occfooter .logotext {
@@ -352,16 +397,14 @@ float: none;
   .headernav form {
 margin-bottom: 1px;
 }
-  .headernav h3 {
-margin-bottom: 3em;
+  .headernav .headernav-title {
+margin-bottom: 1.5em;
+}
+  .headernav .formbox p {
+margin: 1em 0 1.5em 0;
 }
   .headernav li {
 margin-bottom: 1.5em;
-}
-  .headernav.basic {
-position: relative;
-height: auto;
-background: #000;
 }
   .headernav .secure {
 padding-left: 20px;
@@ -379,6 +422,18 @@ width: 100%;
 }
   #occfooter .textright {
 text-align: left;
+}
+  #occfooter ul {
+float: none;
+margin: 0;
+}
+  #occfooter ul a, #occfooter p {
+display: block;
+text-align: left;
+}
+  #occfooter li {
+padding: 1.5em 0 .8em 0;
+border-top: 1px solid #333;
 }
   .left,.right {
 float: none;

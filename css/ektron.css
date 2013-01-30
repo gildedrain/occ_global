@@ -13,6 +13,9 @@ display: none !important;
 /* 2 types of links:ekflexmenu_submenu_btnlink + ekflexmenu_link
 /* ekflexmenu_submenu_btnlink is the tier 1 entry that expands to show tier 2 list of links */
 /* ekflexmenu_link is a tier 1 or tier 2 entry that will never contain a subtier of links */
+.menu {
+box-shadow: 0 2px 3px #aaa;
+}
 .menu .ekflexmenu_submenu_items_hidden {
 display: none;
 }
@@ -23,8 +26,8 @@ display: none;
 .menu .ekflexmenu_link_selected,
 .menu .ekflexmenu_link_selected:hover,
 .menu .ekflexmenu_button_selected {
-color: #FFF !important;
-background-color: #1799fe !important;
+color: #FFF;
+background-color: #1799fe;
 }
 /* tier 2 */
 .menu ul ul .ekflexmenu_link_selected,
