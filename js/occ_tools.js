@@ -20,7 +20,7 @@ $(document).ready(function() {
     window.contentsVisible = true;
     event.stopPropagation();
   });
-  $closers = $('#main, #menutitle, .bg_slideshow')
+  $closers = $('.main, #menutitle, .bg_slideshow')
   $closers.on('click', function() {
     if (window.contentsVisible) {
       drawerClose();

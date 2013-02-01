@@ -90,8 +90,9 @@ margin: 1em 0 .4em .4em;
 }
 .headernav .headernav-title {
 font-size: 1em;
-margin: 0 0 1em 0;
+margin: 0 0 1.5em 0;
 cursor: pointer;
+line-height: .9;
 }
 .tap-icon {
 padding: 0 0 0 25px;
@@ -127,8 +128,8 @@ margin-bottom: 0;
 font-size: .8em;
 }
 .headernav a {
-display: block;
-padding: .5em 0 .5em .4em;
+display: inline-block;
+padding: .5em .75em .5em .4em;
 }
 .headernav .secure {
 padding-left: 20px;
@@ -168,7 +169,7 @@ border: 1px solid #444;
 border-width: 1px 0 1px 0;
 position: relative;
 padding: 0;
-margin: 0;
+margin: 0 0 0 -4px;
 border-radius: 0 2px 2px 0;
 }
   .ie7 .headernav .submitbutton {
@@ -187,7 +188,7 @@ overflow: visible;
 white-space: normal;
 }
 .no-js #occheaderbg {
-height: 195px;
+height: 220px;
 }
 .no-js .headernav {
 position: relative;
@@ -200,7 +201,7 @@ display: none;
 body {
 background: #222;
 }
-#main {
+.main {
 background: #fff url(../../occ_global/images/index_page_top_tile.jpg) repeat-x top left;
 border-top: 1px solid #bbb;
 box-shadow: 0 0 25px #000;
@@ -454,4 +455,8 @@ width: 135px;
 list-style: none;
 padding: 0;
 }
+  .bg_banners li {
+height: 7em !important;
+}
+
 }
