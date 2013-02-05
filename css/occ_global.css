@@ -109,8 +109,6 @@ body {background:#222;}
   .bg_banners li {height:7em !important;}
 }
 /* UNIVERSAL EKTRON OVERRIDES */
-/* Ektron needs span id="cntDynamic" wrapped around every ID,and this disobeys #section>*,so I have to add this rule as a bandaid */
-#cntDynamic>*{margin-left:5px;margin-right:5px;} /* offsets everything to line up with the grid */
 .EktronAjaxLoading{display:none !important;}/* Hide Ektron's Ajax loading gif */
 /* Ektron FLEXMenu classes */
 /* 2 types of links:ekflexmenu_submenu_btnlink + ekflexmenu_link
