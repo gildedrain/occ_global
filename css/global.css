@@ -124,7 +124,7 @@ list-style: none;
 font-size: .9em;
 margin-bottom: 0;
 }
-  .ie7 .headernav li, .ie8 .headernav li {
+  .ie7 .headernav li, .ie8 .headernav li, .gecko .headernav li {
 font-size: .8em;
 }
 .headernav a {
@@ -215,6 +215,12 @@ font-size: 2.5em;
 padding: 1.5em 0 .25em 0;
 width: auto;
 text-shadow: 0 2px 3px #000;
+}
+#section {
+padding-top: 3em;
+}
+#section.hasmenu {
+padding-top: 0;
 }
 #section h3 {
 margin-top: .5em;

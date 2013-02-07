@@ -25,7 +25,7 @@ body, td {font-weight:200;}
 .headernav .close-headernav:hover {background-color:#1179fe; color:#fff;}
 .headernav ul{padding:0;height:auto;margin:0;}
 .headernav li{list-style:none;font-size:.9em; margin-bottom:0;}
-  .ie7 .headernav li, .ie8 .headernav li {font-size:.8em;}
+  .ie7 .headernav li, .ie8 .headernav li, .gecko .headernav li {font-size:.8em;}
 .headernav a {display:inline-block; padding:.5em .75em .5em .4em;}
 .headernav .secure{padding-left:20px;background:url(../../occ_global/images/occ_global_sprites.png) no-repeat 0px -41px;}
 .headernav a:hover {background-color:#1179fe; color:#fff; text-decoration:none;}
@@ -42,6 +42,8 @@ body, td {font-weight:200;}
 body {background:#222;}
 .main {background:#fff url(../../occ_global/images/index_page_top_tile.jpg) repeat-x top left; border-top:1px solid #bbb; box-shadow:0 0 25px #000;}
 #menutitle {color:#aaa; font-weight:200; letter-spacing:-1px; margin:0 5px .25em 5px; font-size:2.5em; padding:1.5em 0 .25em 0; width:auto; text-shadow:0 2px 3px #000;}
+#section {padding-top:3em;}
+#section.hasmenu {padding-top:0;}
 #section h3 {margin-top:.5em;}
 /* UNIVERSAL FOOTER */
 #occfooter{clear:both;background:#000;color:#aaa;font-size:.8em;display:block;padding:2em 0 4em 0;border-top:1px solid #000; margin:0;
