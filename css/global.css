@@ -26,10 +26,11 @@ background: url(../../gui/images/alerts/warning.png) no-repeat 5px center;
 #announcement p {
 background: url(../../gui/images/alerts/info.png) no-repeat 5px center;
 }
-/* UNIVERSAL LOGO BADGE */
+/* UNIVERSAL HEADERNAV DRAWER */
 #occlogo {
 width: 404px;
 height: 100px;
+min-height: 100px;
 position: relative;
 z-index: 1003;
 left: -100px;
@@ -40,33 +41,34 @@ overflow: hidden;
 background: transparent url(../../occ_global/images/occlogo.png) no-repeat top left;
 }
 #occlogo a {
-display: block;
+display: inline-block;
 text-indent: 1000%;
 height: 100px;
+margin-left: 100px;
+width: 200px;
 }
-/* UNIVERSAL HEADERNAV DRAWER */
 #occheaderbg {
-position: absolute;
+position: relative;
 left: 0;
-height: 48px;
+height: auto;
 width: 100%;
 z-index: 1002;
 background: #000;
 }
 .headernav {
+background: #000;
 position: relative;
 top: 0;
 overflow: hidden;
 z-index: 1004;
-padding-left: 220px;
-margin-left: 4em;
+margin-left: 220px;
 height: 48px;
 width: auto;
 display: inline-block;
 }
 /* jquery toggle classes */
-#occheaderbg.opened, .headernav.opened {
-height: 220px;
+.headernav.opened, #occheaderbg.opened {
+height: auto;
 }
 /* header contents */
 .headernav div {
@@ -188,7 +190,7 @@ overflow: visible;
 white-space: normal;
 }
 .no-js #occheaderbg {
-height: 220px;
+height: auto;
 }
 .no-js .headernav {
 position: relative;
@@ -324,15 +326,12 @@ background-color: #000;
 left: 0;
 background-position: 0 2px;
 }
-  #occheaderbg, .headernav {
+  .headernav {
 margin-top: 50px;
 margin-left: 0;
 }
   .headernav {
-position: relative;
-overflow: hidden;
 padding-left: 0;
-background: #000;
 width: 100%;
 border-top: 1px solid #333;
 }
@@ -370,26 +369,18 @@ margin: 0 0 0 5px;
 padding: 0;
 }
   #occlogo {
-position: relative;
 margin: 0;
 height: 30px;
+min-height: 30px;
 background-image: url(../images/occlogo_variant2.gif);
 background-position: 0 -8px;
 }
-  #occlogo a, #occheaderbg {
+  #occlogo a {
 display: none;
 }
 /* logo link disabled for small UI */
   .headernav {
-position: relative;
-overflow: hidden;
-padding-left: 0;
-background: #000;
-width: 100%;
 margin: 0;
-}
-  #occheaderbg.opened, .headernav.opened {
-height: auto;
 }
   .headernav div {
 display: block;
