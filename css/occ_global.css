@@ -130,3 +130,4 @@ body {background:#222;}
 .menu .ekflexmenu_menu_level_2{display:none;}
 /* tier 2 links HACK! ie7 and ie8 targeting */
 .ie .menu ul ul .ekflexmenu_link_selected,.ie .menu ul ul .ekflexmenu_link:hover,.ie .menu ul ul .ekflexmenu_link_selected:hover{background-color:#888 !important;color:#FFF;}
+.menu img {float:right;margin-top:3px;}
