@@ -36,8 +36,8 @@ color: #FFF;
 display: none;
 }
 /* tier 2 links HACK! ie7 and ie8 targeting */
-.ie .menu ul ul .ekflexmenu_link_selected,.ie .menu ul ul .ekflexmenu_link:hover,.ie .menu ul ul .ekflexmenu_link_selected:hover {
+/*.ie .menu ul ul .ekflexmenu_link_selected,.ie .menu ul ul .ekflexmenu_link:hover,.ie .menu ul ul .ekflexmenu_link_selected:hover {
 background-color: #888 !important;
-color: #FFF;
+color: #FFF;*/
 }
 .menu img {float:right;margin-top:3px;}
