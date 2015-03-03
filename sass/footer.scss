@@ -1,0 +1,83 @@
+@import "compass";
+/* UNIVERSAL FOOTER */
+#occfooter {
+clear: both;
+background: #000;
+color: #aaa;
+font-size: .8em;
+display: block;
+padding: 2em 0 4em 0;
+border-top: 1px solid #000;
+margin: 0;
+background: rgb(0,0,0);
+background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(34,34,34,1) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,1)), color-stop(100%,rgba(34,34,34,1)));
+background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(34,34,34,1) 100%);
+background: -o-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(34,34,34,1) 100%);
+}
+#occfooter .logotext,.tagline {
+font-family: 'minion pro','times new roman',serif;
+font-size: 1.25em;
+text-transform: uppercase;
+color: #fff;
+margin-bottom: 1em;
+font-weight: normal;
+}
+#occfooter .tagline {
+text-transform: none;
+margin-bottom: 1em;
+}
+#occfooter a {
+color: #fff;
+}
+#occfooter .question {
+display: block;
+background: transparent url(../images/occ_global_sprites.png) no-repeat -225px -295px;
+height: 20px;
+padding: 10px 0 10px 30px;
+font-size: 1em;
+margin-bottom: .75em;
+}
+#occfooter ul {
+list-style: none;
+padding: 0;
+float: left;
+margin: 0 50px 0 0;
+}
+#occfooter li {
+line-height: 1;
+margin-bottom: .75em;
+}
+@media all and (max-width:970px){
+  #occfooter .tagline, #occfooter .logotext {
+    width: 48%;
+  }
+  #occfooter .tagline {
+    margin-bottom: 2em;
+  }
+}
+@media all and (max-width:595px) {
+#occfooter {
+  margin-top: 0;
+  padding: 1em 5px 1em 5px;
+}
+#occfooter .tagline, #occfooter .logotext {
+  width: 100%;
+}
+#occfooter .textright {
+  text-align: left;
+}
+#occfooter ul {
+  float: none;
+  margin: 0;
+}
+#occfooter ul a, #occfooter p {
+  display: block;
+  text-align: left;
+}
+#occfooter li {
+  padding: 1.5em 0 .8em 0;
+  border-top: 1px solid #333;
+}
+
+}
