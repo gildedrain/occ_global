@@ -27,3 +27,31 @@ padding-top: 0;
 #section h3 {
 margin-top: .5em;
 }
+.news-item {
+  height:84px; 
+  padding-top:10px; 
+  border-width:1px 0 0 0; 
+  border-style:solid; 
+  border-color:#ccc;
+}
+.news-link {
+  display:block; 
+  height:100%; 
+  width:100%; 
+  line-height:1.1; 
+  font-weight:400; 
+  color:#c00;
+}
+.news-link:hover {
+  background:#70b1e4; 
+  color:#003151;
+}
+.news-img {
+  float:right;
+}
+.news-link span {
+  display:inline-block; 
+  white-space:wrap; 
+  width:150px; 
+  padding:.5em 0 0 .25em;
+}
