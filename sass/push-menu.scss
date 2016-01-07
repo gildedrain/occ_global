@@ -1,6 +1,22 @@
 @import "compass";
+
+  .menu .push-menu-closer, .push-menu-opener, .menu .homelink {
+    display:none;
+  }
+
 @media all and (max-width:970px) {
-.headernav .menu-opener {
+
+  #index .header-menu-opener {
+    display:none;
+  }
+  .menu .homelink {
+    display:block; 
+    background:#9e0b0f; 
+    color:#FFF;
+    padding:1em .5em;
+  }
+  
+  .header .push-menu-opener {
   display: inline-block;
   color: #FFF;
   background: #003151;
@@ -10,7 +26,7 @@
   padding: 11.5px;
   margin: .6em 0 .5em .75em;
 }
-.menu .menu-closer {
+.menu .push-menu-closer {
   background: #003151;
   color: #FFF;
   display: block;
@@ -34,7 +50,7 @@ body {
   background: #000;
   background: rgba(0, 0, 0, 0.7);
 }
-#section, #menutitle, #occlogo, .headernav {
+#section, #menutitle, #occlogo, .header {
   position: relative;
   z-index: 10;
   top: 0;
@@ -55,7 +71,7 @@ body {
 body.pushmenu-is-open .pushmenu {
   left: 0;
 }
-body.pushmenu-is-open #section, body.pushmenu-is-open .headernav, body.pushmenu-is-open #occlogo, body.pushmenu-is-open #menutitle {
+body.pushmenu-is-open #section, body.pushmenu-is-open .header, body.pushmenu-is-open #menutitle {
   position: relative;
   left: 290px;
 }

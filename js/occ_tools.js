@@ -26,11 +26,11 @@ $(document).ready(function() {
 /* PUSH MENU --------------
   Requires:
   <tag class="pushmenu">
-    <a href="#" class="menu-closer">Close Menu</a>
+    <a href="#" class="push-menu-closer">Close Menu</a>
     Links go in here
   </tag>
 
-  <a href="#" class="menu-opener">Open Menu</a> (can go anywhere on the page)
+  <a href="#" class="push-menu-opener">Open Menu</a> (can go anywhere on the page)
 
   and CSS classes that describe what .menu and .mask look like when .pushmenu-is-open
 */
@@ -40,13 +40,13 @@ $(document).ready(function() {
     var mask = $('<div class="mask" />');
 
     /* show menu if toggle is clicked */
-    $('.menu-opener').on('click', function(event) {
+    $('.push-menu-opener').on('click', function(event) {
       $('body').addClass('pushmenu-is-open');
       $('body').append(mask);
     });
 
     /* hide menu if menu-closer button is clicked */
-    $('.menu-closer').on('click', function(event) {
+    $('.push-menu-closer').on('click', function(event) {
       $('.js-drawer').switchClass('opened','closed',150);
       $('body').removeClass('pushmenu-is-open');
       mask.remove();

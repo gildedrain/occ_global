@@ -1,36 +1,80 @@
-<div id="occheaderbg">
-  <div class="container">
-    <div id="occlogo">
-      <a href="http://www.sunyocc.edu">Onondaga Community College</a>
-    </div>
-    <div class="headernav basic js-drawer">
-      <div>
-        <p class="medium-blue uppercase tap-icon headernav-title js-drawer-toggle">QuickLinks</p>                                                                                            
-        <ul>
-          <li><a href="http://www.sunyocc.edu/"  class="white">Main Homepage</a></li>                                                                                                                        
-          <li><a href="http://students.sunyocc.edu/"  class="light-blue">Current Students</a></li>                                                                                                                        
-          <li><a href="http://employees.sunyocc.edu/">Employees</a></li>                                                                                                                        
-          <li><a href="http://www.sunyocc.edu/index.aspx?menu=807&amp;id=1815"  class="white">Maps + Directions</a></li>                                                                                                                        
-          <li><a href="http://www.sunyocc.edu/index.aspx?ekfrm=3970"  class="white">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="formbox">
-        <form class="labels-inside" action="http://www.sunyocc.edu/search.aspx" id="cse-search-box">
-          <input type="hidden" name="cx" value="009247214289687445570:4z5fbtg2lek" />
-          <input type="hidden" name="cof" value="FORID:11" />
-          <input type="hidden" name="ie" value="UTF-8" />
-          <label for="search" class="hide">I'm looking for...</label>
-          <input id="search" name="q" class="searchbox  js-drawer-open-only" type="text" title="I'm looking for..." value="" /><input name="sa" class="submitbutton" type="submit" value="go" />
-        </form>
-        <p class="medium-grey">Top Searches</p>
-        <ul>
-          <li><a href="http://admission.sunyocc.edu/paying.aspx?menu=788&amp;coll_id2=477"  class="light-blue">Make a Payment</a></li>
-          <li><a href="http://admission.sunyocc.edu/paying.aspx?menu=788&amp;id=1786"  class="light-blue">Financial Aid</a></li>
-          <li><a href="http://admission.sunyocc.edu"  class="light-blue">Admission</a></li>
-          <li><a href="http://admission.sunyocc.edu/academics.aspx?menu=784"  class="light-blue">Academic Calendar</a></li>
-        </ul>
-      </div>
-      <a href="#"  class="close-headernav js-drawer-toggle">close</a>
-    </div>
-  </div>
-</div>
+      <div class="header row clearfix js-drawer closed">
+        <div class="container">
+          <div id="occlogo"><a href="http://www.sunyocc.edu">www.sunyocc.edu</a></div>
+          <a href="#menu-open" class="js-drawer-toggle header-menu-opener">Menu</a>
+          <a href="#push-menu-open" class="push-menu-opener toggle-pushmenu bg-light-blue"><span class="white">Menu</span></a>
+          <div class="formbox js-drawer-toggle">
+            <form class="labels-inside" action="http://www.sunyocc.edu/search.aspx" id="cse-search-box">
+              <input name="cx" value="009247214289687445570:4z5fbtg2lek" type="hidden">
+              <input name="cof" value="FORID:11" type="hidden">
+						  <input type="hidden" name="hq" value="-inurl:https" />
+              <input name="ie" value="UTF-8" type="hidden">
+              <label class="hide" for="search" style="display: none;">Search this site...</label>
+              <input name="q" title="I'm looking for..." class="searchbox pale-grey italic" id="search" type="text">
+              <input name="sa" class="submitbutton" value="go" type="submit">
+            </form>
+          </div>
+          <div class="js-drawer-content">
+
+            <div class="column">
+              <p class="header-category">Just for You</p>
+              <ul class="header-list">
+                <li><a href="http://www.sunyocc.edu/explore" class="pale-grey">Prospective Students</a></li>
+                <li><a href="http://www.sunyocc.edu/index.aspx?menu=781" class="pale-grey">Parents &amp; Families</a></li>
+                <li><a href="http://www.sunyocc.edu/community" class="pale-grey">Community Members</a></li>
+                <li><a href="http://www.sunyocc.edu/adults" class="pale-grey">Adult Learners</a></li>
+                <!-- <li><a href="http://www.sunyocc.edu/veterans" class="pale-grey">Veterans</a></li> -->
+                <li><a href="http://www.sunyocc.edu/community" class="pale-grey">Businesses</a></li>
+                <li><a href="http://www.sunyocc.edu/alumni" class="pale-grey">Alumni</a></li>
+                <li><a href="http://students.sunyocc.edu" class="light-blue">Current Students</a></li>
+                <li><a href="http://employees.sunyocc.edu" class="light-blue">Employees</a></li>
+              </ul>
+            </div>
+
+            <div class="column">
+              <p class="header-category">Admission Process</p>
+              <ul class="header-list">
+                <li><a href="http://www.sunyocc.edu/apply" class="pale-grey">Apply</a></li>
+                <li><a href="http://www.sunyocc.edu/index.aspx?menu=779" class="pale-grey">Placement Testing</a></li>
+                <li><a href="http://www.sunyocc.edu/index.aspx?menu=788&id=1786" class="pale-grey">Financial Aid</a></li>
+                <li><a href="http://www.sunyocc.edu/housing" class="pale-grey">Residence Halls</a></li>
+                <li><a href="http://www.sunyocc.edu/pay" class="pale-grey">Paying for College</a></li>
+                <li><a href="http://www.sunyocc.edu/register" class="pale-grey">Advising &amp; Registration</a></li>
+                <li><a href="http://students.sunyocc.edu/index.aspx?menu=838" class="pale-grey">Orientation</a></li>
+              </ul>
+            </div>
+            
+            <div class="column">
+              <p class="header-category">Academics</p>
+              <ul class="header-list">
+                <li><a href="http://www.sunyocc.edu/index.aspx?id=6766" class="pale-grey">Degrees, Certificates &amp; Minors</a></li>
+                <li><a href="http://www.sunyocc.edu/catalog" class="pale-grey">College Catalog</a></li>
+                <li><a href="http://www.sunyocc.edu/index.aspx?menu=784" class="pale-grey">Academic Calendar</a></li>
+              </ul>
+            </div>
+            
+            <div class="column">
+              <p class="header-category">Other Sites</p>
+              <ul class="header-list">
+                <li><a href="http://www.onondagalazers.com/" class="pale-grey">Lazers Athletics</a></li>
+                <li><a href="http://www.srcarena.com/" class="pale-grey">SRC Arena &amp; Events Center</a></li>
+								<li><a href="http://library.sunyocc.edu/" class="pale-grey">Coulter Library</a></li>
+								<li><a href="http://www.sunyocc.edu/liverpool" class="pale-grey">OCC @ Liverpool</a></li>
+                <li><a href="http://www.sunyocc.edu/index.aspx?menu=830" class="pale-grey">Small Business Development</a></li>
+                <li><a href="http://www.sunyocc.edu/index.aspx?menu=215" class="pale-grey">Public Safety Training</a></li>
+                <li><a class="supportonondaga pale-orange" href="http://www.sunyocc.edu/index.aspx?menu=924">Support Onondaga</a></li>
+              </ul>
+            </div>
+            
+  
+            <ul class="precol1 col4 cta">
+              <!-- <li><a class="white livechat" href="#">Live Chat</a></li> -->
+              <li><a class="white" href="http://www.sunyocc.edu/visit">Schedule Your Visit</a></li>
+              <li><a class="white" href="https://tfaforms.com/363132">Request Info Packet</a></li>
+              <li><a class="white" href="http://www.sunyocc.edu/apply">Apply</a></li>
+              <li><a class="white" href="http://www.sunyocc.edu/register">Register for Classes</a></li>
+            </ul>
+          
+          </div><!-- //END js-drawer-content -->
+        </div><!-- //END container -->
+      </div><!-- //END js-drawer row header -->
