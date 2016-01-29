@@ -153,6 +153,9 @@ height: auto;
 			.win .header-list li {
 				font-size:.85em;
 			}
+			.header-list a {
+				text-decoration:none;
+			}
 .cta {
   background-color: #9e0b0f; // Old browsers @include filter-gradient(#9e0b0f, #cc0000, vertical); // IE6-9
   @include background-image(linear-gradient(top, #9e0b0f 0%,#cc0000 100%));

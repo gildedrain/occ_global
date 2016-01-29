@@ -52,6 +52,7 @@
 .cta-events a {
   color: #FFF;
   vertical-align: top;
+	text-decoration:none;
 }
 .win .cta-events a {
   font-size:.9em;
@@ -77,6 +78,8 @@
 }
 .calendar-links a {
   color: #FFF;
+	font-size:.8em;
+	text-decoration:none;
 }
 
 @media all and (max-width:970px) {
