@@ -11,21 +11,17 @@
   @include background-image(linear-gradient(top, #9e0b0f 0%,#cc0000 100%));
 }
 
-.feed-youtube {
-  float: left;
-  width: 630px;
-	position:relative;
-	z-index:9999;
-}
+
 .feed-facebook {
 }
 .feed-instagram {
+	float:left;
   position: relative;
 	width:310px;
 	z-index:1;
 }
 .feed-instagram img {
-	display:block;
+	display:inline-block;
 }
 .feed-instagram .instagram-caption {
 	display:block;
@@ -67,8 +63,15 @@
   float: left;
 	position:relative;
 	z-index:9999;
-  width: 630px;
-  margin-right:0px;
+  width: 310px;
+  margin-right:5px;
+}
+.feed-youtube {
+  float: left;
+  width: 310px;
+	position:relative;
+	z-index:9999;
+	margin-left:5px;
 }
 .feed-news {
   position:relative;
